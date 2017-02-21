@@ -1,0 +1,27 @@
+{
+  "name": "react-router-wrapper",
+  "version": "0.0.1",
+  "description": "A higher order component for matching route-components before render, without a centralised config.",
+  "main": "dist/react-router-wrapper.min.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "npm run build-webpack && npm run build-webpack-prod",
+    "build-webpack": "webpack src/index.js dist/react-router-wrapper.js",
+    "build-webpack-prod": "webpack -p src/index.js dist/react-router-wrapper.min.js"
+  },
+  "author": "Fredrik Höglund",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "15.x",
+    "react-router": "^4.0.0-beta.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "react": "15.x",
+    "react-router": "^4.0.0-beta.6",
+    "webpack": "^2.2.1"
+  }
+}
