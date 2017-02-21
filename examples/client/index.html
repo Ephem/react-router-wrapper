@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Client example</title>
+    </head>
+    <body>
+        <div style="border: 1px solid black; padding: 0 20px;">
+            <h2>Rendered before React</h2>
+            <p>Based on the url at load, these are the components that will get rendered. Navigate and reload page to update.</p>
+            <p>Note that there are no centralized route-config and that names are fetched from the components themselves, this could just as well be data dependencies, declared inside of the components.</p>
+            <ul id="components-list" />
+        </div>
+        <div id="react-app" />
+        <script src="/build/shared.js"></script>
+        <script src="/build/client.js"></script>
+    </body>
+</html>

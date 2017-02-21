@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 module.exports = {
     output: {
         library: 'reactRouterWrapper',
@@ -21,5 +23,10 @@ module.exports = {
             commonjs: 'react-router',
             amd: 'react-router'
         }
-    }
+    },
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+        })
+    ]
 };
