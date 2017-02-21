@@ -11,6 +11,8 @@ The library consists of two parts. The main part is the `withRoutes`-higher orde
 ## withRoutes
 
 ```
+import { withRoutes, renderRoutes } from 'react-router-wrapper';
+
 const ComponentThatHasRoutes = ({ routes }) => {
     return (
         <div>
@@ -26,7 +28,7 @@ const WrappedComponent = withRoutes([
 ])(ComponentThatHasRoutes);
 ```
 
-This would render to:
+This would result in:
 
 ```
 <div>
@@ -54,3 +56,7 @@ When I find the time I will add a client preloading example as well as a servers
 2. `npm install`
 3. `npm start` fires up a server
 4. Go to `http://localhost:8080/client` for the example
+
+## Feedback
+
+This is still an early concept, I would love all kinds of input and feedback on it. Feel free to reach out and to toy around with it!
