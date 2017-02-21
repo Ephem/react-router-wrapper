@@ -55,7 +55,7 @@ When I find the time I will add a client preloading example as well as a servers
 1. Clone repo
 2. `npm install`
 3. `npm start` fires up a server
-4. Go to `http://localhost:8080/client` for the example
+4. Go to `http://localhost:8080/basic/` for the example
 
 ## Feedback
 

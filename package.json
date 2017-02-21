@@ -1,7 +1,7 @@
 {
   "name": "react-router-wrapper",
   "version": "0.0.1",
-  "description": "A higher order component for matching route-components before render, without a centralised config.",
+  "description": "A higher order component for matching route-components before render, without a centralized config.",
   "main": "dist/react-router-wrapper.min.js",
   "module": "src/index.js",
   "scripts": {

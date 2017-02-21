@@ -6,7 +6,7 @@ module.exports = {
     context: __dirname,
 
     entry: {
-        client: './client/client.js'
+        basic: './basic/basic.js'
     },
 
     output: {

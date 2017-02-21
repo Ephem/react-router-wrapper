@@ -83,13 +83,13 @@ const Root = withRoutes([
 
 const App = () => {
     return (
-        <BrowserRouter basename='/client'>
+        <BrowserRouter basename='/basic'>
             <Root />
         </BrowserRouter>
     );
 }
 
-const componentsThatWillGetRendered = Root.getMatchedComponents(window.location.pathname.replace('/client', ''));
+const componentsThatWillGetRendered = Root.getMatchedComponents(window.location.pathname.replace('/basic', ''));
 
 document.getElementById('components-list').innerHTML = componentsThatWillGetRendered.reduce(
     (acc, component) => acc + `<li>${component.getName()}</li>`, ''
